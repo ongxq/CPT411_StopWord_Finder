@@ -1,4 +1,5 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,render_template
+
 from flask_cors import CORS
 import re
 import os
@@ -8,7 +9,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "DFA backend is running"
+    return render_template("index.html")
 # =========================
 # DFA CLASS
 # =========================
