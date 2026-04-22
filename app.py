@@ -126,7 +126,7 @@ dfa.set_accept("q16")
 
 # --- "it"
 dfa.add_transition("q0", "i", "q14")
-dfa.add_transition("q14", "s", "q17")
+dfa.add_transition("q14", "t", "q17")
 dfa.set_accept("q17")
 
 # --- "of"

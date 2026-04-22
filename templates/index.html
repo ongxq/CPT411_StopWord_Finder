@@ -109,7 +109,7 @@
       async function processText() {
         let text = document.getElementById("inputText").value;
 
-        let response = await fetch("http://127.0.0.1:8000/process", {
+        let response = await fetch("/process", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text }),
