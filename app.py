@@ -154,6 +154,12 @@ dfa.add_transition("q22", "e", "q25")
 dfa.add_transition("q25", "y", "q26")
 dfa.set_accept("q26")
 
+# --- "the"
+dfa.add_transition("q0", "t", "q21")
+dfa.add_transition("q21", "h", "q22")
+dfa.add_transition("q22", "e", "q25")
+dfa.set_accept("q25")
+
 # --- "to"
 dfa.add_transition("q0", "t", "q21")
 dfa.add_transition("q21", "o", "q27")
